@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CACb;;AACD,AAAA,SAAS,CAAC;EACR,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;CACb;;AACD,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "admin-edit-item.component.scss"
+    ],
+    "names": [],
+    "file": "admin-edit-item.component.css"
+}

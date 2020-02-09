@@ -1,0 +1,116 @@
+<div class="buttonRow">
+  <button
+    mat-raised-button
+    color="primary"
+    class="backButton"
+    routerLink="/Admin_Dashboard"
+  >
+    Back
+  </button>
+  <button
+    mat-raised-button
+    color="primary"
+    routerLink="/Ad_Edit"
+    class="editProductButton"
+  >
+    Edit Product
+  </button>
+</div>
+
+<div class="form-container">
+  <div class="form-heading-div">
+    <h1 class="form-heading">Item Adding Form</h1>
+  </div>
+  <form
+    #adminAddProductForm="ngForm"
+    (ngSubmit)="onclick()"
+    class="admin-entry-form "
+  >
+    <mat-form-field>
+      <mat-select
+        name="categorySelect"
+        placeholder="Category"
+        [(ngModel)]="newProduct.productCategory.categoryName"
+        #categorySelect="ngModel"
+      >
+        <mat-option
+          *ngFor="let show of productCategory"
+          [value]="show.categoryName"
+          class="category-filed"
+          name="show.categoryName"
+          >{{ show.categoryName }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select
+        name="cuisineSelect"
+        [(ngModel)]="newProduct.cuisine.name"
+        #cuisineSelect="ngModel"
+        placeholder="Cuisine"
+      >
+        <mat-option
+          *ngFor="let show of cuisine"
+          [value]="show.name"
+          class="category-filed"
+          name="show.name"
+          >{{ show.name }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Product Name"
+        name="productName"
+        [(ngModel)]="newProduct.productName"
+        #productName="ngModel"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        placeholder="Product Description"
+        name="productDescription"
+        [(ngModel)]="newProduct.productDescription"
+        #productDescription="ngModel"
+      ></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Product Price In Rupees"
+        type="number"
+        class="price-filed"
+        name="productPrice"
+        [(ngModel)]="newProduct.productPrice"
+        #productPrice="ngModel"
+      />
+      <span matSuffix>.00</span>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="primary"
+      class="submit-button"
+      type="submit"
+    >
+      Add Item
+    </button>
+  </form>
+</div>
+
+<!-- <mat-option value="MainCourse" class="category-filed" name="MainCourse"
+          >Main Course</mat-option
+        >
+        <mat-option value="Desert" class="category-filed" name="Desert"
+          >Desert</mat-option
+        >
+        <mat-option value="Drinks" class="category-filed" name="Drinks"
+          >Drinks</mat-option
+        > -->
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- <mat-option value="chinese" class="category-filed" name="chinese"
+                  >Chinese</mat-option
+                >  -->

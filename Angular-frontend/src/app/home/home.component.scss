@@ -1,0 +1,176 @@
+.d-block {
+  height: 500px;
+}
+@keyframes yourAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-inner {
+  animation: yourAnimation 1.5s 0s linear;
+}
+#carouselExampleIndicators {
+  margin-bottom: 30px;
+}
+
+// <!-- image slider ended >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+// Category Container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.Category {
+  background-color: #d59dc5;
+
+  h2 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 15px;
+    color: #241f1f;
+  }
+}
+
+.CategoryContainer {
+  background-color: #d59dc5;
+  height: 250px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "div1 div2 div3 div4";
+}
+
+.CategoryImageDive1 {
+  grid-area: div1;
+  margin: auto;
+  height: 200px;
+  width: 250px;
+  background-image: url("../../assets/images/hpmeCuisineImages/pancakes-2291908.jpg");
+  border-radius: 5px;
+  p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+}
+.CategoryImageDive2 {
+  grid-area: div2;
+  margin: auto;
+  height: 200px;
+  width: 250px;
+  background-image: url("../../assets/images/hpmeCuisineImages/pancakes-2291908.jpg");
+  border-radius: 5px;
+  p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+}
+.CategoryImageDive3 {
+  grid-area: div3;
+  margin: auto;
+  height: 200px;
+  width: 250px;
+  background-image: url("../../assets/images/hpmeCuisineImages/pancakes-2291908.jpg");
+  border-radius: 5px;
+  p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+}
+.CategoryImageDive4 {
+  grid-area: div4;
+  margin: auto;
+  height: 200px;
+  width: 250px;
+  background-image: url("../../assets/images/hpmeCuisineImages/pancakes-2291908.jpg");
+  border-radius: 5px;
+  p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.Cuisine {
+  background-color: #d59dc5;
+  margin-top: 30px;
+  h2 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 15px;
+    color: #241f1f;
+  }
+}
+
+.CuisineContainer {
+  background-color: #d59dc5;
+  height: 500px;
+  width: 75%;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "div1 div2 "
+    "div3 div4";
+}
+
+.CuisineImageDive1 {
+  grid-area: div1;
+  margin: auto;
+  height: 200px;
+  width: 400px;
+  background-image: url(../../assets/images/hpmeCuisineImages/pancakes-2291908.jpg);
+  p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+}
+.CuisineImageDive2 {
+  grid-area: div2;
+  margin: auto;
+  height: 200px;
+  width: 400px;
+  background-image: url(../../assets/images/hpmeCuisineImages/pancakes-2291908.jpg);
+
+  p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+}
+.CuisineImageDive3 {
+  grid-area: div3;
+  margin: auto;
+  height: 200px;
+  width: 400px;
+  background-image: url(../../assets/images/hpmeCuisineImages/pancakes-2291908.jpg);
+
+  p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+}
+.CuisineImageDive4 {
+  grid-area: div4;
+  margin: auto;
+  height: 200px;
+  width: 400px;
+  background-image: url(../../assets/images/hpmeCuisineImages/pancakes-2291908.jpg);
+
+  p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+}
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

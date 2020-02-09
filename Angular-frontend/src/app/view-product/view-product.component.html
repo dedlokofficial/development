@@ -1,0 +1,10 @@
+<div class="container" *ngFor="let show of products">
+  <ul>
+    <li>{{ show.productName }}</li>
+    <li>{{ show.productDescription }}</li>
+    <li>{{ show.productPrice }}</li>
+    <li>{{ show.cuisine.name }}</li>
+    <li>{{ show.productCategory.categoryName }}</li>
+  </ul>
+</div>
+<button (click)="showProducts()">Show</button>

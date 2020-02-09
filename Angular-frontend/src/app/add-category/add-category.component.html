@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="formDiv">
+    <form
+      #addCategoryForm="ngForm"
+      (ngSubmit)="(addCategory)"
+      class="Category-form"
+    >
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Category"
+          name="categoryName"
+          [(ngModel)]="newProductCategory.categoryName"
+          #categoryName="ngModel"
+        />
+      </mat-form-field>
+      <button
+        mat-raised-button
+        color="primary"
+        class="submit-button"
+        type="submit"
+        (click)="onclick()"
+      >
+        Add Category
+      </button>
+    </form>
+  </div>
+</div>

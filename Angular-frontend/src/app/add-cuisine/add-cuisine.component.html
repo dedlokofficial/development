@@ -1,0 +1,59 @@
+<section>
+  <!-- <form #addCuisineForm="ngForm" (ngSubmit)="(addCuisine)" class="Cuisine-form">
+    <mat-checkbox
+      value="indian"
+      class="example-margin"
+      name="indian"
+      [(ngModel)]="newCuisine.name"
+      #indian="ngModel"
+      >Indian</mat-checkbox
+    >
+    <mat-checkbox
+      value="chinese"
+      class="example-margin"
+      name="chinese"
+      [(ngModel)]="newCuisine.dec"
+      #chinese="ngModel"
+      >Chinese</mat-checkbox
+    >-->
+  <!-- <mat-checkbox
+      value="indian"
+      class="example-margin"
+      name="indian"
+      [(ngModel)]="newCuisine.name"
+      #indian="ngModel"
+      >Italian</mat-checkbox
+    >
+    <mat-checkbox
+      value="indian"
+      class="example-margin"
+      name="indian"
+      [(ngModel)]="newCuisine.name"
+      #indian="ngModel"
+      >Thai</mat-checkbox
+    > -->
+
+  <!--<button
+      mat-raised-button
+      color="primary"
+      class="submit-button"
+      type="submit"
+      (click)="onclick()"
+    >
+      Add Item
+    </button>
+  </form>-->
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <!-- our form array of checkboxes will go here -->
+
+    <label
+      formArrayName="cuisines"
+      *ngFor="let order of form.controls.cuisines.controls; let i = index"
+    >
+      <input type="checkbox" [formControlName]="i" />
+      {{ cuisineData[i].name }}
+    </label>
+    <button type="submit">submit</button>
+  </form>
+</section>

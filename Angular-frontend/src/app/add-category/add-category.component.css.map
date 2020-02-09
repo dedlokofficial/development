@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,QAAQ,CAAC;EACP,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,cAAc,GAAG,CAAC,CAAC;EACjB,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "add-category.component.scss"
+    ],
+    "names": [],
+    "file": "add-category.component.css"
+}

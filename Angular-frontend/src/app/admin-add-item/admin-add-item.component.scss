@@ -1,0 +1,58 @@
+.buttonRow {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+.editProductButton {
+  float: right;
+}
+
+.form-heading-div {
+  text-align: center;
+  margin: auto;
+}
+.form-heading {
+  margin: auto;
+}
+
+.form-container {
+  border: 5px solid #3727c9;
+  border-radius: 15px;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.admin-entry-form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  width: 80%;
+  text-align: center;
+}
+
+.admin-entry-form > * {
+  width: 100%;
+  align-items: center;
+}
+
+input.price-filed::-webkit-outer-spin-button,
+input.price-filed::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.price-filed {
+  -moz-appearance: textfield;
+}
+
+.category-filed {
+  background-color: #42b8a89a;
+}
+
+.submit-button {
+  margin: auto;
+  width: 50px;
+}
