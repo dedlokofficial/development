@@ -42,7 +42,7 @@ public class ProductController {
 	
 	@PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Mono<Product> saveMovie(@RequestBody Product product){
+    public Mono<Product> saveProduct(@RequestBody Product product){
         return productRepository.save(product);
     }
 
